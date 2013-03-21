@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="http://code.angularjs.org/1.0.5/angular.min.js"></script>
+    <script src="test4.js"></script>
+  </head>
+  <body>
+    <div ng-controller="MyCntrl">
+      Language:
+      <select ng-model="language" ng-options="l.name for l in languages"></select><br>
+
+      Currently selected: {{ {selected_language:language} }}
+      </div>
+    </div>
+  </body>
+</html>

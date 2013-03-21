@@ -1,0 +1,58 @@
+<!doctype html>
+<html ng-app="translatetest_ge">
+<head>
+  <title> Mobile Test </title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+  <script type="text/javascript" src="https://raw.github.com/StephanHoyer/ng-translate/master/translate.js"></script>
+  <script type="text/javascript" src="mobile0.js"></script>
+</head>
+  <body>
+    <div ng-controller="MyCntrl">
+      Language:
+      <select ng-model="language" ng-options="lang.name for lang in languages"></select><br>
+
+      Currently selected: {{ {selected_language:language.name} }}
+      
+      <br>
+        
+        {{language.name}}
+      
+      <div ng-app="translatetest_ge">
+      <!--  <div ng-app="translatetest_{{language.name}}"> -->
+      <div translate>Hello World!</div>
+      
+      </div>  
+      
+      
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+<html ng-app="translatetest_{{language}}">
+<head>
+  <title> Mobile Test </title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+  <script type="text/javascript" src="https://raw.github.com/StephanHoyer/ng-translate/master/translate.js"></script>
+  <script type="text/javascript" src="mobile0.js"></script>
+</head>
+<body>
+
+    <div translate>Hello World!</div>
+
+    
+    <div id="container">
+      <div ng-view> </div>
+      
+    </div>
+</body>
+
+</html>
+
+
+    </div>
+</div>-->
+
+
+

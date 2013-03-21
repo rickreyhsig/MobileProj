@@ -1,0 +1,35 @@
+<!doctype html>
+
+    <p>Escolha seu idioma:</p>
+      <select ng-model="orderProp">
+        <option value="en">Inglês</option>
+        <option value="es">Espanhol</option>
+        <option value="ge">Alemão</option>
+        <option value="pt">Português</option>
+      </select>
+
+<br>
+<br>
+
+
+<html ng-app="translatetest_pt">
+<head>
+  <title> Mobile Test </title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+  <script type="text/javascript" src="https://raw.github.com/StephanHoyer/ng-translate/master/translate.js"></script>
+  <script type="text/javascript" src="mobile0.js"></script>
+</head>
+<body>
+
+    <div translate>Hello World!</div>
+
+    
+    <div id="container">
+      <div ng-view> </div>
+        
+      </div>
+      
+    </div>
+</body>
+
+</html>
